@@ -67,7 +67,9 @@
     <div class="Stories-items">
       <div class="Stories-item">
         <figure class="Stories-item-box">
-          <img src="https://pbs.twimg.com/profile_images/1025174508049784832/B_D4-Vgs_400x400.jpg" alt="">
+          <img
+            src="https://pbs.twimg.com/profile_images/1025174508049784832/B_D4-Vgs_400x400.jpg"
+            alt="" />
         </figure>
         <h2>
           LuisLiraC

@@ -20,4 +20,3 @@
   <div class="Modal-overlay" />
   <slot />
 </div>
-

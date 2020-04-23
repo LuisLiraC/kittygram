@@ -1,17 +1,17 @@
 <script>
-  export let comments = []
+  export let comments = [];
 
   function addComent(event) {
-    const msg = event.target.text.value
+    const msg = event.target.text.value;
     if (msg.length > 3) {
       const message = {
         id: Date.now(),
         text: msg,
-        username: 'luislirac'
-      }
-      comments = [...comments, message]
+        username: "luislirac"
+      };
+      comments = [...comments, message];
 
-      event.target.text.value = ''
+      event.target.text.value = "";
     }
   }
 </script>

@@ -1,5 +1,5 @@
 <script>
-  let year = new Date().getFullYear()
+  let year = new Date().getFullYear();
 </script>
 
 <style>
@@ -14,7 +14,9 @@
 <footer class="Footer">
   <div class="Footer-container">
     <div class="Footer-copy">
-      &copy; <time>{year}</time> Kittygram from Luis Lira 💙
+      &copy;
+      <time>{year}</time>
+      Kittygram from Luis Lira 💙
     </div>
   </div>
 </footer>

@@ -1,5 +1,5 @@
 <script>
-  import { likeCount } from '../store/store.js'
+  import { likeCount } from "../store/store.js";
 </script>
 
 <style>

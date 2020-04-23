@@ -1,33 +1,33 @@
 <script>
-  import Comments from "./Comments.svelte"
-  import Modal from "./Modal.svelte"
-  import Share from "./Share.svelte"
+  import Comments from "./Comments.svelte";
+  import Modal from "./Modal.svelte";
+  import Share from "./Share.svelte";
 
-  import { blur } from "svelte/transition"
-  import { likeCount } from '../store/store.js'
+  import { blur } from "svelte/transition";
+  import { likeCount } from "../store/store.js";
 
-  export let username
-  export let location
-  export let avatar
-  export let photo
-  export let postComment
-  export let comments
+  export let username;
+  export let location;
+  export let avatar;
+  export let photo;
+  export let postComment;
+  export let comments;
 
-  let isModal = false
-  let like
-  let bookmark
+  let isModal = false;
+  let like;
+  let bookmark;
 
   function toggleModal() {
-    isModal = !isModal
+    isModal = !isModal;
   }
 
   function handleLike() {
-    like = !like
+    like = !like;
 
     if (like) {
-      likeCount.update(n => n + 1)
+      likeCount.update(n => n + 1);
     } else {
-      likeCount.update(n => n - 1)
+      likeCount.update(n => n - 1);
     }
   }
 </script>
@@ -170,30 +170,23 @@
       </div>
     </div>
 
-    <figure 
-      class="Card-photo" 
-      on:dblclick={handleLike} 
-    >
+    <figure class="Card-photo" on:dblclick={handleLike}>
       <img src={photo} alt="" />
     </figure>
 
     <div class="Card-icons">
       <div class="Card-icons-first">
-        <i class="fas fa-heart" 
+        <i
+          class="fas fa-heart"
           class:active-like={like}
-          on:click={handleLike} 
-        />
-        <i 
-          class="fas fa-paper-plane" 
-          on:click={toggleModal} 
-        />
+          on:click={handleLike} />
+        <i class="fas fa-paper-plane" on:click={toggleModal} />
       </div>
       <div class="Card-icons-second">
-        <i 
+        <i
           class="fas fa-bookmark"
           class:active-bookmark={bookmark}
-          on:click={() => (bookmark = !bookmark)}
-        />
+          on:click={() => (bookmark = !bookmark)} />
       </div>
     </div>
 

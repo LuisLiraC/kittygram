@@ -1,6 +1,6 @@
 <script>
-  export let name
-  export let nickname
+  export let name;
+  export let nickname;
 </script>
 
 <style>
@@ -34,7 +34,9 @@
 <div class="Profile">
   <div class="Profile-content">
     <figure class="Profile-avatar">
-      <img src="https://pbs.twimg.com/profile_images/1025174508049784832/B_D4-Vgs_400x400.jpg" alt="">
+      <img
+        src="https://pbs.twimg.com/profile_images/1025174508049784832/B_D4-Vgs_400x400.jpg"
+        alt="" />
     </figure>
     <div class="Profile-info">
       <h2>{nickname}</h2>

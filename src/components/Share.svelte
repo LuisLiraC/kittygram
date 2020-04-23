@@ -44,10 +44,9 @@
     <i class="fas fa-times-circle" on:click />
   </div>
   <div class="Share-content">
-    <a 
-      href="https://www.facebook.com/sharer/sharer.php?&u=https://pugstagram.co"
-      target="_blank"
-    >
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?&u=https://kittygram.netlify.app/"
+      target="_blank">
       <i class="fab fa-facebook-square" />
       Compartir en Facebook
     </a>
